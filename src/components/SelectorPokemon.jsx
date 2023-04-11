@@ -29,7 +29,7 @@ const SelectorPokemon = () => {
       <select className="form-select" value={selected} onChange={handleChange}>
         <option value="0" key="0" selected>  </option>
         {data.map((pokemon, index) => (
-          <option value={index + 1} key={pokemon.name}> {pokemon.name} </option>
+          <option value={pokemon.name} key={pokemon.name}> {pokemon.name} </option>
         ))}
       </select>
     </div>
